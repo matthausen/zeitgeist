@@ -21,7 +21,9 @@ const useStyles = makeStyles(theme => ({
     maxHeight: 140,
     '@media (max-width: 960px)': {
       maxWidth: 310,
-      maxHeight: 310
+      maxHeight: 310,
+      float: 'left',
+      marginRight: 'calc(100% - 310px)'
     }
   },
   mediaPlayer: {
@@ -51,9 +53,9 @@ export default function GuestList({ description, otherGuests }) {
         <Container>
           <List component="nav" aria-label="other guests">
             <Box className={classes.flex}>
-              <Link href={`/episode/${o.id}`}>
-                <img className={classes.imageFit} src={o.image} alt="podcast-guest"></img>
-              </Link>
+                <Link href={`/episode/${o.id}`}>
+                  <img className={classes.imageFit} src={o.image} alt="podcast-guest"></img>
+                </Link>
               <Box className={classes.text}>
                 <Typography className={classes.title} variant="h6">Latest. Mon 26</Typography>
                 <br />

@@ -32,7 +32,9 @@ const useStyles = makeStyles({
     maxHeight: 200,
     '@media (max-width: 960px)': {
       maxWidth: 310,
-      maxHeight: 310
+      maxHeight: 310,
+      float: 'left',
+      marginRight: 'calc(100% - 310px)'
     }
   },
   mediaPlayer: {
@@ -58,10 +60,10 @@ export default function Guest() {
 
   const index = window.location.href.split("/").pop()
   const guests = [
-    { id:1, image: episode1, title: "Episode 4: Responsible recovery - Part 2" },
-    { id:2, image: episode2, title: "Episode 1: How Google is thinking about AI" },
-    { id:3, image: episode3, title: "Episode 2: A quantum leap" },
-    { id:4, image: episode4, title: "Episode 3: Responsible recovery - Part 1" }
+    { id: 1, image: episode1, title: "Episode 4: Responsible recovery - Part 2" },
+    { id: 2, image: episode2, title: "Episode 1: How Google is thinking about AI" },
+    { id: 3, image: episode3, title: "Episode 2: A quantum leap" },
+    { id: 4, image: episode4, title: "Episode 3: Responsible recovery - Part 1" }
   ];
   const description = "In this episode, we're goign to explore how Google and Alphabet are thinking about Artificial Intelligence. How can AI help to tackle major global challenges like climate change. And what role can it play for businesses and communities, particularly during the pandemic ?"
 
@@ -82,7 +84,9 @@ export default function Guest() {
       </Container>
       <Container className={classes.darkContainer}>
         <Box className={classes.flex}>
-          <img className={classes.imageFit} src={guests[index - 1].image} alt="podcast-guest"></img>
+          <div>
+            <img className={classes.imageFit} src={guests[index - 1].image} alt="podcast-guest"></img>
+          </div>
           <Box className={classes.text}>
             <Typography className={classes.date} variant="h5">Latest. Mon 26</Typography>
             <br />
