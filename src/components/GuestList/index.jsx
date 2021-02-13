@@ -51,7 +51,7 @@ export default function GuestList({ description, otherGuests }) {
         <Container>
           <List component="nav" aria-label="other guests">
             <Box className={classes.flex}>
-              <Link href={`/guests/${o.id}`}>
+              <Link href={`/episode/${o.id}`}>
                 <img className={classes.imageFit} src={o.image} alt="podcast-guest"></img>
               </Link>
               <Box className={classes.text}>

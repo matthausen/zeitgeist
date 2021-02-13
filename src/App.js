@@ -4,7 +4,6 @@ import {
   Route
 } from "react-router-dom";
 import Hero from './components/Hero';
-import HomeGrid from './components/Grid';
 import Guest from './components/Guest';
 import './App.css';
 
@@ -14,8 +13,7 @@ function App() {
       <Hero />
       <Router>
         <Switch>
-          <Route exact path="/" component={HomeGrid} />
-          <Route path="/guests" component={Guest} />
+          <Route path="/episode" component={Guest} />
         </Switch>
       </Router>
     </div>

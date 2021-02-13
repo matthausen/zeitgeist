@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Container, Box, Link } from '@material-ui/core';
+import { Container, Box } from '@material-ui/core';
 import brandingShapes from '../assets/branding-shapes.png'
 import logo from '../assets/logo.png'
 
@@ -30,9 +30,7 @@ export default function Header() {
       </div>
       <Container className={classes.container}>
         <Box m={6} mx="auto" classeName={classes.logoBox}>
-          <Link href="/">
-            <img className={classes.logo} src={logo} alt="zeitgeist-logo" />
-          </Link>
+          <img className={classes.logo} src={logo} alt="zeitgeist-logo" />
         </Box>
       </Container>
     </>
