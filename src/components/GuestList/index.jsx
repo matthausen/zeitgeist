@@ -11,7 +11,7 @@ const useStyles = makeStyles(theme => ({
   flex: {
     display: 'flex',
     padding: 60,
-    '@media (max-width: 780px)': {
+    '@media (max-width: 960px)': {
       display: 'block',
       padding: 0
     }
@@ -19,21 +19,21 @@ const useStyles = makeStyles(theme => ({
   imageFit: {
     maxWidth: 140,
     maxHeight: 140,
-    '@media (max-width: 780px)': {
+    '@media (max-width: 960px)': {
       maxWidth: 310,
       maxHeight: 310
     }
   },
   mediaPlayer: {
     maxHeight: 40,
-    '@media (max-width: 780px)': {
+    '@media (max-width: 960px)': {
       maxWidth: 320,
     }
   },
   text: {
     textAlign: 'left',
     padding: '0 40px',
-    '@media (max-width: 780px)': {
+    '@media (max-width: 960px)': {
       padding: 0
     }
   },

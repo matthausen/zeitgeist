@@ -22,7 +22,7 @@ const useStyles = makeStyles({
   flex: {
     display: 'flex',
     padding: 60,
-    '@media (max-width: 780px)': {
+    '@media (max-width: 960px)': {
       display: 'block',
       padding: 10
     }
@@ -30,20 +30,20 @@ const useStyles = makeStyles({
   imageFit: {
     maxWidth: 200,
     maxHeight: 200,
-    '@media (max-width: 780px)': {
+    '@media (max-width: 960px)': {
       maxWidth: 310,
       maxHeight: 310
     }
   },
   mediaPlayer: {
-    '@media (max-width: 780px)': {
+    '@media (max-width: 960px)': {
       maxWidth: 320,
     }
   },
   text: {
     textAlign: 'left',
     padding: '0 40px',
-    '@media (max-width: 780px)': {
+    '@media (max-width: 960px)': {
       padding: 0
     }
   },
@@ -63,7 +63,7 @@ export default function Guest() {
     { id:3, image: episode3, title: "Episode 2: A quantum leap" },
     { id:4, image: episode4, title: "Episode 3: Responsible recovery - Part 1" }
   ];
-  const description = "In this episode, we're goign to explore how Google and Alphabet are thinking about Artificial Intelligence. How can AI help to tackle major global challenges like climate change/. And what role can it play for businesses and communities, particularly during the pandemic ?"
+  const description = "In this episode, we're goign to explore how Google and Alphabet are thinking about Artificial Intelligence. How can AI help to tackle major global challenges like climate change. And what role can it play for businesses and communities, particularly during the pandemic ?"
 
   let otherGuests = [...guests];
   const guestIndex = guests.indexOf(guests[index - 1]);
