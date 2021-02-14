@@ -18,7 +18,7 @@ const useStyles = makeStyles({
   description: {
     color: 'rgb(255, 247, 221)',
     textAlign: 'justify',
-    marginTop: 20
+    margin: '20px 0'
   },
   flex: {
     display: 'flex',
@@ -32,15 +32,15 @@ const useStyles = makeStyles({
     maxWidth: 200,
     maxHeight: 200,
     '@media (max-width: 960px)': {
-      maxWidth: 310,
-      maxHeight: 310,
+      maxWidth: 320,
+      maxHeight: 320,
       float: 'left',
-      marginRight: 'calc(100% - 310px)'
+      marginRight: 'calc(100% - 320px)'
     }
   },
   text: {
     textAlign: 'left',
-    padding: '0 60px',
+    padding: '0 100px',
     '@media (max-width: 960px)': {
       padding: 0
     }

@@ -16,7 +16,7 @@ const useStyles = makeStyles(theme => ({
   },
   flex: {
     display: 'flex',
-    padding: 60,
+    padding: '40px 0',
     '@media (max-width: 960px)': {
       display: 'block',
       padding: 0
@@ -34,7 +34,7 @@ const useStyles = makeStyles(theme => ({
   },
   text: {
     textAlign: 'left',
-    padding: '0 40px',
+    paddingLeft: 20,
     '@media (max-width: 960px)': {
       padding: 0
     }
