@@ -10,6 +10,7 @@ import episode4 from '../assets/episode-4.jpg';
 const useStyles = makeStyles({
   darkContainer: {
     backgroundColor: 'rgb(45, 45, 45)',
+    minWidth: '100%'
   },
   date: {
     color: "rgb(180, 172, 150)",
