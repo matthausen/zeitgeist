@@ -6,7 +6,6 @@ import episode1 from '../assets/episode-1.jpg';
 import episode2 from '../assets/episode-2.jpg';
 import episode3 from '../assets/episode-3.jpg';
 import episode4 from '../assets/episode-4.jpg';
-import mediaPlayer from '../assets/mediaplayer.png'
 
 const useStyles = makeStyles({
   darkContainer: {
@@ -18,6 +17,8 @@ const useStyles = makeStyles({
   },
   description: {
     color: 'rgb(255, 247, 221)',
+    textAlign: 'justify',
+    marginTop: 20
   },
   flex: {
     display: 'flex',
@@ -37,14 +38,9 @@ const useStyles = makeStyles({
       marginRight: 'calc(100% - 310px)'
     }
   },
-  mediaPlayer: {
-    '@media (max-width: 960px)': {
-      maxWidth: 320,
-    }
-  },
   text: {
     textAlign: 'left',
-    padding: '0 40px',
+    padding: '0 60px',
     '@media (max-width: 960px)': {
       padding: 0
     }
@@ -92,7 +88,7 @@ export default function Guest() {
             <br />
             <Typography className={classes.title} variant="h4">{guests[index - 1].title}</Typography>
             <br />
-            <img className={classes.mediaPlayer} src={mediaPlayer} alt="media-player"></img>
+            <iframe height="52px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/fac5a25e-8230-4e45-a3b0-6d2affbba70b?dark=false"></iframe>
             <Typography className={classes.description}>{description}</Typography>
           </Box>
         </Box>

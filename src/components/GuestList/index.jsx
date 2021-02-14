@@ -1,12 +1,18 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Container, Box, Typography, List, Link } from '@material-ui/core';
-import mediaPlayer from '../assets/mediaplayer.png'
 
 const useStyles = makeStyles(theme => ({
   root: {
     width: '100%',
     marginTop: 48
+  },
+  description: {
+    textAlign: 'justify',
+    marginTop: 20,
+    '@media (max-width: 960px)': {
+      marginBottom: 20
+    }
   },
   flex: {
     display: 'flex',
@@ -24,12 +30,6 @@ const useStyles = makeStyles(theme => ({
       maxHeight: 310,
       float: 'left',
       marginRight: 'calc(100% - 310px)'
-    }
-  },
-  mediaPlayer: {
-    maxHeight: 40,
-    '@media (max-width: 960px)': {
-      maxWidth: 320,
     }
   },
   text: {
@@ -61,8 +61,8 @@ export default function GuestList({ description, otherGuests }) {
                 <br />
                 <Typography className={classes.title} variant="h5">{o.title}</Typography>
                 <br />
-                <img className={classes.mediaPlayer} src={mediaPlayer} alt="media-player"></img>
-                <Typography>{description}</Typography>
+                <iframe height="52px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/fac5a25e-8230-4e45-a3b0-6d2affbba70b?dark=false"></iframe>
+                <Typography className={classes.description}>{description}</Typography>
               </Box>
             </Box>
           </List>
