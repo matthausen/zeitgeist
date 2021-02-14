@@ -29,7 +29,7 @@ const useStyles = makeStyles(theme => ({
   imageFit: {
     maxWidth: 140,
     maxHeight: 140,
-    boxShadow: '-1px 1px 5px 5px rgba(0,0,0,0.10);',
+    boxShadow: '-1px 1px 4px 4px rgba(0,0,0,0.08);',
     '@media (max-width: 960px)': {
       maxWidth: '100%',
       maxHeight: '100%',
