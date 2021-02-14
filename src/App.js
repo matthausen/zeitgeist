@@ -10,7 +10,7 @@ import './App.css';
 
 const THEME = createMuiTheme({
   typography: {
-    "fontFamily": `"ProductSans", "Helvetica", "Arial", sans-serif`,
+    "fontFamily": `"GoogleSans", "Helvetica", "Arial", sans-serif`,
     "fontSize": 14,
     "fontWeightLight": 300,
     "fontWeightRegular": 400,

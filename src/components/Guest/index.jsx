@@ -37,6 +37,10 @@ const useStyles = makeStyles({
       maxHeight: 320,
       float: 'left',
       marginRight: 'calc(100% - 320px)'
+    },
+    '@media (max-width: 450px)': {
+      maxWidth: '100%',
+      maxHeight: '100%',
     }
   },
   text: {
@@ -62,7 +66,7 @@ export default function Guest() {
     { id: 3, image: episode3, title: "Episode 2: A quantum leap" },
     { id: 4, image: episode4, title: "Episode 3: Responsible recovery - Part 1" }
   ];
-  const description = "In this episode, we're goign to explore how Google and Alphabet are thinking about Artificial Intelligence. How can AI help to tackle major global challenges like climate change. And what role can it play for businesses and communities, particularly during the pandemic ?"
+  const description = "In this episode, we're going to explore how Google and Alphabet are thinking about Artificial Intelligence. How can AI help to tackle major global challenges like climate change. And what role can it play for businesses and communities, particularly during the pandemic ?"
 
   let otherGuests = [...guests];
   const guestIndex = guests.indexOf(guests[index - 1]);
@@ -89,7 +93,7 @@ export default function Guest() {
             <br />
             <Typography className={classes.title} variant="h4">{guests[index - 1].title}</Typography>
             <br />
-            <iframe height="52px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/fac5a25e-8230-4e45-a3b0-6d2affbba70b?dark=false"></iframe>
+            <iframe title="mediaplayer" height="52px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/fac5a25e-8230-4e45-a3b0-6d2affbba70b?dark=false"></iframe>
             <Typography className={classes.description}>{description}</Typography>
           </Box>
         </Box>

@@ -7,6 +7,10 @@ const useStyles = makeStyles(theme => ({
     width: '100%',
     marginTop: 48
   },
+  date: {
+    color: "rgb(180, 172, 150)",
+    fontWeight: 800,
+  },
   description: {
     textAlign: 'justify',
     marginTop: 20,
@@ -26,10 +30,14 @@ const useStyles = makeStyles(theme => ({
     maxWidth: 140,
     maxHeight: 140,
     '@media (max-width: 960px)': {
-      maxWidth: 310,
-      maxHeight: 310,
+      maxWidth: 320,
+      maxHeight: 320,
       float: 'left',
-      marginRight: 'calc(100% - 310px)'
+      marginRight: 'calc(100% - 320px)'
+    },
+    '@media (max-width: 450px)': {
+      maxWidth: '100%',
+      maxHeight: '100%',
     }
   },
   text: {
@@ -57,11 +65,11 @@ export default function GuestList({ description, otherGuests }) {
                   <img className={classes.imageFit} src={o.image} alt="podcast-guest"></img>
                 </Link>
               <Box className={classes.text}>
-                <Typography className={classes.title} variant="h6">Latest. Mon 26</Typography>
+                <Typography className={classes.date} variant="h6">Latest. Mon 26</Typography>
                 <br />
                 <Typography className={classes.title} variant="h5">{o.title}</Typography>
                 <br />
-                <iframe height="52px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/fac5a25e-8230-4e45-a3b0-6d2affbba70b?dark=false"></iframe>
+                <iframe title="mediaplayer" height="52px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/fac5a25e-8230-4e45-a3b0-6d2affbba70b?dark=false"></iframe>
                 <Typography className={classes.description}>{description}</Typography>
               </Box>
             </Box>

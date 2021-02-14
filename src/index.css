@@ -1,13 +1,13 @@
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Product Sans', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'GoogleSans', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 @font-face {
-    font-family: 'ProductSans';
-    src: local('ProductSans'), url(./components/fonts/ProductSans-Regular.ttf) format('truetype');
+    font-family: 'GoogleSans';
+    src: local('GoogleSans'), url(./components/fonts/GoogleSans-Regular.ttf) format('truetype');
 }
 
 code {
