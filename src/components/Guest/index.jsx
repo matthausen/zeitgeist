@@ -30,17 +30,12 @@ const useStyles = makeStyles({
     }
   },
   imageFit: {
-    maxWidth: 200,
-    maxHeight: 200,
+    maxWidth: 300,
+    maxHeight: 300,
     '@media (max-width: 960px)': {
-      maxWidth: 320,
-      maxHeight: 320,
-      float: 'left',
-      marginRight: 'calc(100% - 320px)'
-    },
-    '@media (max-width: 450px)': {
-      maxWidth: '100%',
-      maxHeight: '100%',
+      margin: '60px 10px',
+      maxWidth: 'calc(100% - 20px)',
+      maxHeight: 'calc(100% - 20px)',
     }
   },
   text: {

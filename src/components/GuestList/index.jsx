@@ -30,12 +30,6 @@ const useStyles = makeStyles(theme => ({
     maxWidth: 140,
     maxHeight: 140,
     '@media (max-width: 960px)': {
-      maxWidth: 320,
-      maxHeight: 320,
-      float: 'left',
-      marginRight: 'calc(100% - 320px)'
-    },
-    '@media (max-width: 450px)': {
       maxWidth: '100%',
       maxHeight: '100%',
     }
