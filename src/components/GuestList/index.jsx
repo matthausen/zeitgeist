@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Container, Box, Typography, List, Link } from '@material-ui/core';
+import MediaPlayer from '../MediaPlayer';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -65,7 +66,7 @@ export default function GuestList({ description, otherGuests }) {
                 <br />
                 <Typography className={classes.title} variant="h5">{o.title}</Typography>
                 <br />
-                <iframe title="mediaplayer" height="52px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/fac5a25e-8230-4e45-a3b0-6d2affbba70b?dark=false"></iframe>
+                <MediaPlayer />
                 <Typography className={classes.description}>{description}</Typography>
               </Box>
             </Box>

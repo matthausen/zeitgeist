@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Container, Box, Typography } from '@material-ui/core';
 import GuestList from '../GuestList';
+import MediaPlayer from '../MediaPlayer';
 import episode1 from '../assets/episode-1.jpg';
 import episode2 from '../assets/episode-2.jpg';
 import episode3 from '../assets/episode-3.jpg';
@@ -88,7 +89,7 @@ export default function Guest() {
             <br />
             <Typography className={classes.title} variant="h4">{guests[index - 1].title}</Typography>
             <br />
-            <iframe title="mediaplayer" height="52px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/fac5a25e-8230-4e45-a3b0-6d2affbba70b?dark=false"></iframe>
+            <MediaPlayer />
             <Typography className={classes.description}>{description}</Typography>
           </Box>
         </Box>
