@@ -9,14 +9,17 @@ const useStyles = makeStyles({
     overflowX: 'hidden'
   },
   header: {
-    maxHeight: 120,
+    maxHeight: 200,
+    '@media (max-width: 960px)': {
+      width: '100%'
+    }
   },
   logo: {
     maxWidth: '20em',
     height: 'auto'
   },
   container: {
-    padding: '60px 0'
+    padding: '50px 0'
   }
 });
 
@@ -29,7 +32,7 @@ export default function Header() {
         <img className={classes.header} src={brandingShapes} alt="branding-shapes" />
       </div>
       <Container className={classes.container}>
-        <Box m={6} mx="auto" classeName={classes.logoBox}>
+        <Box m={4} mx="auto" classeName={classes.logoBox}>
           <img className={classes.logo} src={logo} alt="zeitgeist-logo" />
         </Box>
       </Container>

@@ -6,6 +6,7 @@ import {
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import Hero from './components/Hero';
 import Guest from './components/Guest';
+import Footer from './components/Footer';
 import './App.css';
 
 const THEME = createMuiTheme({
@@ -28,6 +29,7 @@ function App() {
             <Route path="/episode" component={Guest} />
           </Switch>
         </Router>
+        <Footer />
       </div>
     </MuiThemeProvider>
   );

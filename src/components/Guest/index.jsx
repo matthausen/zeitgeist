@@ -23,15 +23,15 @@ const useStyles = makeStyles({
   },
   flex: {
     display: 'flex',
-    padding: 60,
+    padding: '30px 100px',
     '@media (max-width: 960px)': {
       display: 'block',
       padding: 10
     }
   },
   imageFit: {
-    maxWidth: 300,
-    maxHeight: 300,
+    maxWidth: 350,
+    maxHeight: 350,
     '@media (max-width: 960px)': {
       margin: '60px 10px',
       maxWidth: 'calc(100% - 20px)',
@@ -71,7 +71,7 @@ export default function Guest() {
 
   return (
     <>
-      <Container maxWidth="md">
+      <Container maxWidth="lg">
         <Box mb={6}>
           <Typography>Zeitgeist is an event that people mark on their calendar in anticipation — brilliant guests, inspiring stories, intimate & inclusive.</Typography>
           <br />
