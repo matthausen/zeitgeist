@@ -17,7 +17,7 @@ const Footer = () => {
   return (
     <div className={classes.footer}>
       <Box>
-        <a href="https://google.com" target="_blank" rel="noreferrer">Privacy Policy</a>
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">Privacy Policy</a>
       </Box>
     </div>
   );
