@@ -1,12 +1,12 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Container, Box, Typography, List, Link } from '@material-ui/core';
+import { Box, Typography, List, Link } from '@material-ui/core';
 import MediaPlayer from '../MediaPlayer';
 
 const useStyles = makeStyles(theme => ({
   root: {
-    width: '100%',
-    marginTop: 48
+    width: 1074,
+    margin: '42px auto'
   },
   date: {
     color: "rgb(180, 172, 150)",
@@ -28,8 +28,8 @@ const useStyles = makeStyles(theme => ({
     }
   },
   imageFit: {
-    maxWidth: 140,
-    maxHeight: 140,
+    maxWidth: 163,
+    maxHeight: 163,
     boxShadow: '-1px 1px 4px 4px rgba(0,0,0,0.06);',
     marginRight: 32,
     '@media (max-width: 960px)': {
@@ -55,23 +55,21 @@ export default function GuestList({ description, otherGuests }) {
   return (
     <div className={classes.root}>
       {otherGuests.map(o => (
-        <Container>
-          <List component="nav" aria-label="other guests">
-            <Box className={classes.flex}>
-                <Link href={`/episode/${o.id}`}>
-                  <img className={classes.imageFit} src={o.image} alt="podcast-guest"></img>
-                </Link>
-              <Box className={classes.text}>
-                <Typography className={classes.date} variant="h6">Latest. Mon 26</Typography>
-                <br />
-                <Typography className={classes.title} variant="h5">{o.title}</Typography>
-                <br />
-                <MediaPlayer />
-                <Typography className={classes.description}>{description}</Typography>
-              </Box>
+        <List component="nav" aria-label="other guests">
+          <Box className={classes.flex}>
+            <Link href={`/episode/${o.id}`}>
+              <img className={classes.imageFit} src={o.image} alt="podcast-guest"></img>
+            </Link>
+            <Box className={classes.text}>
+              <Typography className={classes.date} variant="h6">Latest. Mon 26</Typography>
+              <br />
+              <Typography className={classes.title} variant="h5">{o.title}</Typography>
+              <br />
+              <MediaPlayer />
+              <Typography className={classes.description}>{description}</Typography>
             </Box>
-          </List>
-        </Container>
+          </Box>
+        </List>
       ))}
     </div>
   );

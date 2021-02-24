@@ -11,7 +11,8 @@ import episode4 from '../assets/episode-4.jpg';
 const useStyles = makeStyles({
   darkContainer: {
     backgroundColor: 'rgb(45, 45, 45)',
-    minWidth: '100%'
+    minWidth: '100%',
+    minHeight: 510
   },
   date: {
     color: "rgb(180, 172, 150)",
@@ -24,26 +25,28 @@ const useStyles = makeStyles({
   },
   flex: {
     display: 'flex',
-    padding: '30px 100px',
+    maxWidth: 1074,
+    margin: '0 auto',
+    padding: '60px 0',
     '@media (max-width: 960px)': {
       display: 'block',
       padding: 10
     }
   },
   imageFit: {
-    maxWidth: 350,
-    maxHeight: 350,
+    maxWidth: 390,
+    maxHeight: 390,
     '@media (max-width: 960px)': {
-      margin: '60px 10px',
-      maxWidth: 'calc(100% - 20px)',
-      maxHeight: 'calc(100% - 20px)',
+      margin: '40px 0',
+      maxWidth: '100%',
     }
   },
   text: {
     textAlign: 'left',
-    padding: '0 100px',
+    marginLeft: 50,
     '@media (max-width: 960px)': {
-      padding: 0
+      padding: 0,
+      marginLeft: 0
     }
   },
   title: {
@@ -72,13 +75,6 @@ export default function Guest() {
 
   return (
     <>
-      <Container maxWidth="lg">
-        <Box mb={6}>
-          <Typography>Zeitgeist is an event that people mark on their calendar in anticipation — brilliant guests, inspiring stories, intimate & inclusive.</Typography>
-          <br />
-          <Typography>Things are different this year, so as an alternative to a live event we’re making a portable, on-demand experience. Brilliant in all the same ways and absolutely impossible to miss.</Typography>
-        </Box>
-      </Container>
       <Container className={classes.darkContainer}>
         <Box className={classes.flex}>
           <div>
@@ -94,14 +90,10 @@ export default function Guest() {
           </Box>
         </Box>
       </Container>
-      <Container maxWidth="md">
-        <Box mb={6}>
-          <GuestList
-            description={description}
-            otherGuests={otherGuests}
-          />
-        </Box>
-      </Container>
+      <GuestList
+        description={description}
+        otherGuests={otherGuests}
+      />
     </>
   );
 }
