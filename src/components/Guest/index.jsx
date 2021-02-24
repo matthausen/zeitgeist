@@ -21,7 +21,9 @@ const useStyles = makeStyles({
   description: {
     color: 'rgb(255, 247, 221)',
     textAlign: 'justify',
-    margin: '20px 0'
+    margin: '20px 0',
+    fontSize: 16,
+    fontWeight: 400
   },
   flex: {
     display: 'flex',
@@ -39,6 +41,7 @@ const useStyles = makeStyles({
     '@media (max-width: 960px)': {
       margin: '40px 0',
       maxWidth: '100%',
+      maxHeight: '100%'
     }
   },
   text: {
@@ -65,7 +68,7 @@ export default function Guest() {
     { id: 3, image: episode3, title: "Episode 2: A quantum leap", date: "Coming soon" },
     { id: 4, image: episode4, title: "Episode 3: Responsible recovery - Part 1", date: "Coming soon" }
   ];
-  const description = "In this episode, we're going to explore how Google and Alphabet are thinking about Artificial Intelligence. How can AI help to tackle major global challenges like climate change. And what role can it play for businesses and communities, particularly during the pandemic ?"
+  const description = "In this episode, we're going to explore how Google and Alphabet are thinking about Artificial Intelligence. How can AI help to tackle major global challenges like climate change. And what role can it play for businesses and communities, particularly during the pandemic?"
 
   let otherGuests = [...guests];
   const guestIndex = guests.indexOf(guests[index - 1]);

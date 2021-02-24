@@ -33,8 +33,10 @@ const useStyles = makeStyles(theme => ({
     boxShadow: '0px 4px 4px 0px rgba(0,0,0,0.25);',
     marginRight: 32,
     '@media (max-width: 960px)': {
-      maxWidth: '100%',
-      maxHeight: '100%',
+      marginRight: 0,
+      maxWidth: 'calc(100% - 5px)',
+      maxHeight: 'calc(100% - 5px)',
+      marginBottom: 20
     }
   },
   text: {

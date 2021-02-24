@@ -29,8 +29,10 @@ const useStyles = makeStyles({
     }
   },
   text: {
-    color: '#333'
-  }
+    color: '#333',
+    fontSize: 16,
+    fontWeight: 400
+  },
 });
 
 export default function Header() {
