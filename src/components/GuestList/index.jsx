@@ -1,11 +1,11 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Box, Typography, List, Link } from '@material-ui/core';
+import { Container, Box, Typography, List, Link } from '@material-ui/core';
 import MediaPlayer from '../MediaPlayer';
 
 const useStyles = makeStyles(theme => ({
   root: {
-    width: 1074,
+    maxWidth: 1122,
     margin: '42px auto'
   },
   date: {
@@ -55,21 +55,23 @@ export default function GuestList({ description, otherGuests }) {
   return (
     <div className={classes.root}>
       {otherGuests.map(o => (
-        <List component="nav" aria-label="other guests">
-          <Box className={classes.flex}>
-            <Link href={`/episode/${o.id}`}>
-              <img className={classes.imageFit} src={o.image} alt="podcast-guest"></img>
-            </Link>
-            <Box className={classes.text}>
-              <Typography className={classes.date} variant="h6">Latest. Mon 26</Typography>
-              <br />
-              <Typography className={classes.title} variant="h5">{o.title}</Typography>
-              <br />
-              <MediaPlayer />
-              <Typography className={classes.description}>{description}</Typography>
+        <Container className={classes.container}>
+          <List component="nav" aria-label="other guests">
+            <Box className={classes.flex}>
+              <Link href={`/episode/${o.id}`}>
+                <img className={classes.imageFit} src={o.image} alt="podcast-guest"></img>
+              </Link>
+              <Box className={classes.text}>
+                <Typography className={classes.date} variant="h6">Latest. Mon 26</Typography>
+                <br />
+                <Typography className={classes.title} variant="h5">{o.title}</Typography>
+                <br />
+                <MediaPlayer />
+                <Typography className={classes.description}>{description}</Typography>
+              </Box>
             </Box>
-          </Box>
-        </List>
+          </List>
+        </Container>
       ))}
     </div>
   );
