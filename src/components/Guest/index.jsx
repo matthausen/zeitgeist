@@ -63,10 +63,10 @@ export default function Guest() {
 
   const index = window.location.href.split("/").pop()
   const guests = [
-    { id: 1, image: episode1, title: "Episode 4: Responsible recovery - Part 2", date: "Latest. Mon 26" },
-    { id: 2, image: episode2, title: "Episode 1: How Google is thinking about AI", date: "Latest. Mon 26" },
-    { id: 3, image: episode3, title: "Episode 2: A quantum leap", date: "Coming soon" },
-    { id: 4, image: episode4, title: "Episode 3: Responsible recovery - Part 1", date: "Coming soon" }
+    { id: 1, image: episode2, title: "Episode 1: How Google is thinking about AI", date: "Latest. Mon 26" },
+    { id: 2, image: episode3, title: "Episode 2: A quantum leap", date: "Coming soon" },
+    { id: 3, image: episode4, title: "Episode 3: Responsible recovery - Part 1", date: "Coming soon" },
+    { id: 4, image: episode1, title: "Episode 4: Responsible recovery - Part 2", date: "Latest. Mon 26" }
   ];
   const description = "In this episode, we're going to explore how Google and Alphabet are thinking about Artificial Intelligence. How can AI help to tackle major global challenges like climate change. And what role can it play for businesses and communities, particularly during the pandemic?"
 
