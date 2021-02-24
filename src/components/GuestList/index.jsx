@@ -62,7 +62,7 @@ export default function GuestList({ description, otherGuests }) {
                 <img className={classes.imageFit} src={o.image} alt="podcast-guest"></img>
               </Link>
               <Box className={classes.text}>
-                <Typography className={classes.date} variant="h6">Latest. Mon 26</Typography>
+                <Typography className={classes.date} variant="h6">{o.date}</Typography>
                 <br />
                 <Typography className={classes.title} variant="h5">{o.title}</Typography>
                 <br />
