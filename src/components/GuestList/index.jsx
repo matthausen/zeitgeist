@@ -30,7 +30,7 @@ const useStyles = makeStyles(theme => ({
   imageFit: {
     maxWidth: 163,
     maxHeight: 163,
-    boxShadow: '-1px 1px 4px 4px rgba(0,0,0,0.06);',
+    boxShadow: '0px 4px 4px 0px rgba(0,0,0,0.25);',
     marginRight: 32,
     '@media (max-width: 960px)': {
       maxWidth: '100%',
