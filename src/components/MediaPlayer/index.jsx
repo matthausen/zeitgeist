@@ -1,6 +1,5 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import trololo from './trololo.mp3';
 
 const useStyles = makeStyles(theme => ({
   mediaplayer: {
@@ -17,7 +16,7 @@ const MediaPlayer = () => {
 
   return (
     <div>
-      <audio className={classes.mediaplayer} controls src={trololo}></audio>
+      <audio className={classes.mediaplayer} controls src=""></audio>
     </div>
   )
 }
