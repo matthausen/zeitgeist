@@ -16,7 +16,7 @@ const MediaPlayer = () => {
 
   return (
     <div>
-      <audio className={classes.mediaplayer} controls src=""></audio>
+      <audio id="mediaplayer" className={classes.mediaplayer} controls src=""></audio>
     </div>
   )
 }

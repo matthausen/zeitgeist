@@ -4,14 +4,16 @@ body {
     font-family: 'GoogleSans';
 }
 
-@supports (-webkit-overflow-scrolling: touch) {
-    audio::-webkit-media-controls-panel {
-        background-color: red;
-    }
-}
-
 a:visited {
     color: black
+}
+
+@media not all and (min-resolution:.001dpcm) {
+    @supports (-webkit-appearance: none) {
+        #mediaplayer {
+            background-color: transparent;
+        }
+    }
 }
 
 audio::-webkit-media-controls-panel {
