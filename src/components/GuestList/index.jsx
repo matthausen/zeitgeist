@@ -72,9 +72,6 @@ export default function GuestList({ description, otherGuests }) {
                 <Typography className={classes.description}>{o.description1}</Typography>
                 <br />
                 <Typography className={classes.description}>{o.description2}</Typography>
-                <br />
-                <Typography className={classes.description}>{o.description3}</Typography>
-                <br />
               </Box>
             </Box>
           </List>
