@@ -69,7 +69,12 @@ export default function GuestList({ description, otherGuests }) {
                 <Typography className={classes.title} variant="h5">{o.title}</Typography>
                 <br />
                 <MediaPlayer />
-                <Typography className={classes.description}>{description}</Typography>
+                <Typography className={classes.description}>{o.description1}</Typography>
+                <br />
+                <Typography className={classes.description}>{o.description2}</Typography>
+                <br />
+                <Typography className={classes.description}>{o.description3}</Typography>
+                <br />
               </Box>
             </Box>
           </List>
