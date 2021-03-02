@@ -51,7 +51,7 @@ export default function Header() {
         <Box m={4} mx="auto">
           <Typography className={classes.text}>Welcome to The Zeitgeist Podcast, the series that takes you inside Google’s most exciting conversations.</Typography>
           <br />
-          <Typography className={classes.text}>Each episode gives you access to unique insights into the technology and trends that will shape the future of your business.</Typography>
+          <Typography className={classes.text}>Each episode gives you access to unique insights into the technology and trends shaping the future of your business.</Typography>
         </Box>
       </Container>
     </>

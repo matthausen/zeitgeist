@@ -32,7 +32,7 @@ const useStyles = makeStyles({
     padding: '60px 0',
     '@media (max-width: 960px)': {
       display: 'block',
-      padding: 10
+      padding: 10,
     }
   },
   imageFit: {
@@ -93,7 +93,7 @@ export default function Guest() {
       title: "Episode 3: Building Back Better: A Sustainable Economic Recovery", 
       date: "Coming soon",
       description1: <span>In the post-COVID global economy, how can business, government and NGOs work together on a long-term plan and drive forward a digitally-accelerated and sustainable recovery?</span>,
-      description2: <span>In this episode, <mark className={classes.name}>Ruth Porat</mark>, Chief Financial Officer of Alphabet & Google, meets two extraordinary leaders: <mark className={classes.name}>Kristalina Georgieva</mark>, Managing Director of the International Recovery Fund, and <mark className={classes.name}>David Miliband</mark>, former UK Foreign Secretary and the current CEO of the International Rescue Committee.</span>,
+      description2: <span>In this episode, <mark className={classes.name}>Ruth Porat</mark>, Chief Financial Officer of Alphabet & Google, meets two extraordinary leaders: <mark className={classes.name}>Kristalina Georgieva</mark>, Managing Director of the International Monetary Fund, and <mark className={classes.name}>David Miliband</mark>, former UK Foreign Secretary and the current CEO of the International Rescue Committee.</span>,
       audio: "",
     },
     { 
