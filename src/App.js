@@ -1,7 +1,8 @@
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  Redirect
 } from "react-router-dom";
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import Hero from './components/Hero';
@@ -26,6 +27,9 @@ function App() {
         <Hero />
         <Router>
           <Switch>
+            <Route exact path="/">
+              <Redirect to="/episode/1" />
+            </Route>
             <Route path="/episode" component={Guest} />
           </Switch>
         </Router>
