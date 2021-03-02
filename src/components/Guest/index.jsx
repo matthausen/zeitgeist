@@ -21,13 +21,12 @@ const useStyles = makeStyles({
   description: {
     color: 'rgb(255, 247, 221)',
     textAlign: 'justify',
-    margin: '20px 0',
     fontSize: 16,
     fontWeight: 400
   },
   flex: {
     display: 'flex',
-    maxWidth: 1074,
+    maxWidth: 1100,
     margin: '0 auto',
     padding: '60px 0',
     '@media (max-width: 960px)': {
@@ -128,7 +127,6 @@ export default function Guest() {
             <br />
             {audioFile.length > 0 && <MediaPlayer src={audioFile}/>}
             <Typography className={classes.description}>{guests[index - 1].description1}</Typography>
-            <br />
             <Typography className={classes.description}>{guests[index - 1].description2}</Typography>
           </Box>
         </Box>

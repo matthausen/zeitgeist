@@ -14,7 +14,6 @@ const useStyles = makeStyles(theme => ({
   },
   description: {
     textAlign: 'justify',
-    marginTop: 20,
     '@media (max-width: 960px)': {
       marginBottom: 20
     }
@@ -70,7 +69,6 @@ export default function GuestList({ description, otherGuests }) {
                 <br />
                 {o.audio.length > 0 && <MediaPlayer src={o.audio}/>}
                 <Typography className={classes.description}>{o.description1}</Typography>
-                <br />
                 <Typography className={classes.description}>{o.description2}</Typography>
               </Box>
             </Box>
