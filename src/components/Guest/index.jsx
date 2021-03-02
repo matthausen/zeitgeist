@@ -70,7 +70,8 @@ export default function Guest() {
       date: "Thursday, Mar 4",
       description1: "Artificial Intelligence will be the defining technology of the 21st century. What can it do for our businesses and communities? And how will it help us emerge stronger from this pandemic?",
       description2: "The podcast is presented by Matt Brittin, President of Google’s Business Operations in EMEA, and Dara Ó Briain, a well-known broadcaster, comedian and science presenter in the UK and Ireland. They are joined by Demis Hassabis, founder and CEO of Google’s sister company DeepMind, and a world leader in the field of AI.",
-      audio: "",
+      audio: "https://storage.googleapis.com/zg21previewfiles/Google_Zeitgeist_Podcast_1_M_16bit_44K.mp3",
+
     },
     { 
       id: 2, 
@@ -79,7 +80,7 @@ export default function Guest() {
       date: "Thursday, March 4",
       description1: "Are you ready for the quantum computing revolution and has this game-changing technology brought us to the cusp of a new Industrial Revolution?",
       description2: "This episode is presented by Yonca Dervişoğlu, Google’s Chief Marketing Officer for EMEA. Yonca’s special guest is Hartmut Neven, the distinguished scientist and founder of Google’s Quantum Artificial Intelligence Lab.",
-      audio: "",
+      audio: "https://storage.googleapis.com/zg21previewfiles/Google_Zeitgeist_Podcast_2_M_16bit_44K.mp3",
     },
     { 
       id: 3, 
