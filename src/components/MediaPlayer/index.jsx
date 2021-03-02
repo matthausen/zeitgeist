@@ -11,12 +11,13 @@ const useStyles = makeStyles(theme => ({
 }));
 
 
-const MediaPlayer = () => {
+const MediaPlayer = props => {
   const classes = useStyles();
 
+  console.log("props", props);
   return (
     <div>
-      <audio id="mediaplayer" className={classes.mediaplayer} controls src=""></audio>
+      <audio id="mediaplayer" className={classes.mediaplayer} controls src={props.src}></audio>
     </div>
   )
 }
