@@ -23,9 +23,10 @@ const useStyles = makeStyles({
   container: {
     maxWidth: 1074,
     maxHeight: 255,
+    minWidth: 335,
     marginBottom: 50,
     '@media (max-width: 960px)': {
-      marginBottom: 150
+      marginBottom: 100
     }
   },
   text: {
