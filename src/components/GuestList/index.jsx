@@ -68,7 +68,7 @@ export default function GuestList({ description, otherGuests }) {
                 <br />
                 <Typography className={classes.title} variant="h5">{o.title}</Typography>
                 <br />
-                <MediaPlayer />
+                {o.audio.length > 0 && <MediaPlayer src={o.audio}/>}
                 <Typography className={classes.description}>{o.description1}</Typography>
                 <br />
                 <Typography className={classes.description}>{o.description2}</Typography>
