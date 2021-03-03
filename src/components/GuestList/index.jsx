@@ -6,6 +6,7 @@ import MediaPlayer from '../MediaPlayer';
 const useStyles = makeStyles(theme => ({
   root: {
     maxWidth: 1122,
+    minWidth: 335,
     margin: '42px auto'
   },
   date: {
@@ -14,6 +15,7 @@ const useStyles = makeStyles(theme => ({
   },
   description: {
     textAlign: 'justify',
+    marginBottom: 20,
     '@media (max-width: 960px)': {
       marginBottom: 20
     }
@@ -23,7 +25,6 @@ const useStyles = makeStyles(theme => ({
     padding: '40px 0',
     '@media (max-width: 960px)': {
       display: 'block',
-      padding: 0
     }
   },
   imageFit: {
@@ -68,6 +69,7 @@ export default function GuestList({ description, otherGuests }) {
                 <Typography className={classes.title} variant="h5">{o.title}</Typography>
                 <br />
                 {o.audio.length > 0 && <MediaPlayer src={o.audio}/>}
+                <br/>
                 <Typography className={classes.description}>{o.description1}</Typography>
                 <Typography className={classes.description}>{o.description2}</Typography>
               </Box>
