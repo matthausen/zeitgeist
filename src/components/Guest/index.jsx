@@ -95,7 +95,7 @@ export default function Guest() {
       description2: <p>In this episode, <mark className={classes.name}>Ruth Porat</mark>, Chief Financial Officer of Alphabet & Google, meets two extraordinary leaders: <mark className={classes.name}>Kristalina Georgieva</mark>, Managing Director of the International Recovery Fund, and <mark className={classes.name}>David Miliband</mark>, former UK Foreign Secretary and the current CEO of the International Rescue Committee.</p>,
       audio: "",
     },
-    { 
+    /* { 
       id: 4, 
       image: episode1, 
       title: "Episode 4: Building Back Better: An Inclusive Economic Recovery", 
@@ -103,7 +103,7 @@ export default function Guest() {
       description1: <p>The pandemic has shone a light on the inequities and the divisions within our society - how can we make sure that the economic recovery is both sustainable and inclusive?</p>,
       description2: <p><mark className={classes.name}>Matt Brittin</mark>, President of Google’s Business Operations in EMEA, returns to the theme of economic recovery with <mark className={classes.name}>Dame Vivian Hunt</mark>, Senior Partner, McKinsey & Company. Dame Vivian advises leading companies on a broad range of strategic topics, with a particular focus on performance transformation, productivity growth and organisational agility, as well as diversity and inclusion. Google recently collaborated with the McKinsey Global Institute on new research looking at the impact of automation on jobs in Europe.</p>,
       audio: "",
-    }
+    } */
   ];
 
   let otherGuests = [...guests];
